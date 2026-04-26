@@ -1,18 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan | Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <!-- Custom cursor (JS animated) -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Animated background -->
+  <div class="animated-bg"></div>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <div class="glow-effect"></div>
+      <h1>Alex <span class="gradient-text">Morgan</span></h1>
+      <div class="subhead">Creative Developer & Problem Solver</div>
+      <div class="bio">
+        I build immersive web experiences with clean code and modern design. 
+        Transforming ideas into interactive realities.
+      </div>
+      <div class="skills">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Vue.js</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">TailwindCSS</span>
+        <span class="skill-tag">Three.js</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Firebase</span>
+      </div>
+    </header>
+
+    <!-- Stats Counter Section (JS animated) -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-target="25">0</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="12">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="100">0</div>
+        <div class="stat-label">Cups of Coffee</div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <h2 class="section-title">Featured Work</h2>
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="design">UI/UX</button>
+      <button class="filter-btn" data-filter="api">APIs</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Project 1 -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <div class="image-icon">📝</div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">TaskFlow</h3>
+          <p class="project-description">
+            Smart task management with drag-drop, local storage, and real-time filtering.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Tailwind</span>
+            <span>LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-github" target="_blank">📁 GitHub</a>
+            <a href="#" class="btn-demo" target="_blank">🔗 Live Demo →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-category="api">
+        <div class="project-image">
+          <div class="image-icon">🌤️</div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">ClimateCast</h3>
+          <p class="project-description">
+            Real-time weather dashboard with 7-day forecast and interactive maps.
+          </p>
+          <div class="project-tech">
+            <span>OpenWeather API</span>
+            <span>Chart.js</span>
+            <span>Fetch API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-github" target="_blank">📁 GitHub</a>
+            <a href="#" class="btn-demo" target="_blank">🔗 Live Demo →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-category="design">
+        <div class="project-image">
+          <div class="image-icon">🎨</div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">ChromaLab</h3>
+          <p class="project-description">
+            Color palette generator with AI suggestions and export to CSS variables.
+          </p>
+          <div class="project-tech">
+            <span>Vanilla JS</span>
+            <span>CSS Custom Props</span>
+            <span>LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-github" target="_blank">📁 GitHub</a>
+            <a href="#" class="btn-demo" target="_blank">🔗 Live Demo →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <div class="image-icon">💬</div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">ChatSphere</h3>
+          <p class="project-description">
+            Real-time chat application with room creation and message reactions.
+          </p>
+          <div class="project-tech">
+            <span>Socket.io</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-github" target="_blank">📁 GitHub</a>
+            <a href="#" class="btn-demo" target="_blank">🔗 Live Demo →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card" data-category="api">
+        <div class="project-image">
+          <div class="image-icon">🎵</div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">SoundScout</h3>
+          <p class="project-description">
+            Music discovery app using Spotify API with playlist generation.
+          </p>
+          <div class="project-tech">
+            <span>Spotify API</span>
+            <span>OAuth 2.0</span>
+            <span>Vue.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-github" target="_blank">📁 GitHub</a>
+            <a href="#" class="btn-demo" target="_blank">🔗 Live Demo →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card" data-category="design">
+        <div class="project-image">
+          <div class="image-icon">📊</div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Analytics Dashboard</h3>
+          <p class="project-description">
+            Interactive dashboard with charts, tables, and data visualization.
+          </p>
+          <div class="project-tech">
+            <span>Chart.js</span>
+            <span>D3.js</span>
+            <span>Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-github" target="_blank">📁 GitHub</a>
+            <a href="#" class="btn-demo" target="_blank">🔗 Live Demo →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <h3>Let's Create Something Amazing</h3>
+      <p>Available for freelance work and collaborations</p>
+      <div class="contact-links">
+        <a href="https://github.com/yourusername" class="contact-btn" target="_blank">GitHub</a>
+        <a href="https://upwork.com/freelancers/~yourprofile" class="contact-btn" target="_blank">Upwork</a>
+        <a href="mailto:alex@example.com" class="contact-btn">Email</a>
+        <a href="#" class="contact-btn">LinkedIn</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Alex Morgan | Built with 💻 & ☕</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
