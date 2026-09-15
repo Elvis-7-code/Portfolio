@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elvis Wachira | Portfolio</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="progress-bar"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home">Elvis<span>.</span>Wachira</a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="navicon" id="navicon">
+          <div class="navicon-line top"></div>
+          <div class="navicon-line middle"></div>
+          <div class="navicon-line bottom"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>👋 Elvis Wachira</span>
+      </div>
+      <h1>I'm <span class="typed-text"></span><span class="cursor-blink">|</span></h1>
+      <p class="hero-description">
+        Front-end developer who builds clean, functional web apps that solve real problems.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-outline">Hire Me <i class="fas fa-paper-plane"></i></a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://upwork.com/freelancers/yourprofile"><i class="fab fa-upwork"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>I'm <span class="highlight">Elvis Wachira</span> from Kenya</h3>
+          <p>I build web applications that people actually want to use. Clean code, smooth UX, and attention to detail.</p>
+          <p>Currently focused on front-end development and looking for freelance opportunities on Upwork.</p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>elvis@example.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Nairobi, Kenya</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Available for freelance</span>
+            </div>
+          </div>
+          <a href="#" class="btn-primary">Download Resume <i class="fas fa-download"></i></a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-circle">
+            <div class="circle" data-value="0.95">
+              <span class="circle-value">95%</span>
+            </div>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="stat-circle">
+            <div class="circle" data-value="0.85">
+              <span class="circle-value">85%</span>
+            </div>
+            <p>Project Success</p>
+          </div>
+          <div class="stat-circle">
+            <div class="circle" data-value="0.90">
+              <span class="circle-value">90%</span>
+            </div>
+            <p>On-Time Delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-category">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <div class="skill-bar">
+            <div class="skill-info"><span>HTML/CSS</span><span>90%</span></div>
+            <div class="progress"><div class="progress-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+            <div class="progress"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info"><span>React</span><span>75%</span></div>
+            <div class="progress"><div class="progress-fill" data-width="75"></div></div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3><i class="fas fa-tools"></i> Tools & Other</h3>
+          <div class="skill-bar">
+            <div class="skill-info"><span>Git & GitHub</span><span>85%</span></div>
+            <div class="progress"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info"><span>Responsive Design</span><span>90%</span></div>
+            <div class="progress"><div class="progress-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info"><span>API Integration</span><span>80%</span></div>
+            <div class="progress"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 🟢 PROJECTS SECTION - ALL PROJECTS LIVE HERE -->
+  <!-- ========================================== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="api">APIs</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- PROJECT 1: Task Manager (Web App) -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="image-icon">📝</div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Task Manager App</h3>
+            <p>Simple to-do app with add, edit, delete, and local storage.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-github"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Weather Dashboard (API Project) -->
+        <div class="project-card" data-category="api">
+          <div class="project-image">
+            <div class="image-icon">🌦️</div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather app showing temperature, humidity, wind speed, and 5-day forecast using OpenWeatherMap API.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-github"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🟢 TO ADD MORE PROJECTS: Copy the entire <div class="project-card"> block above and paste it here -->
+        <!-- 🟢 Then change: data-category, image-icon, h3, p, tech spans, and links -->
+
+      </div>
+      <!-- 🔼 PROJECTS GRID ENDS HERE 🔼 -->
+    </div>
+  </section>
+  <!-- ========================================== -->
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's work together</h3>
+          <p>Got a project? I'm available for freelance work.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <span>elviswachira800@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-upwork"></i>
+              <div>
+                <h4>Upwork</h4>
+                <span>Available for hire</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+          <div class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Elvis Wachira. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
